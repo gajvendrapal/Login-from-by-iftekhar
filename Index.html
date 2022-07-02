@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        * {
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+        }
+        .parent{
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+        .parent img{
+         width: 100vw;
+         height: 100vh;
+        display: block;
+     }
+     .child{
+        position: absolute;
+         transform: translate(-50%,-50%);
+         top: 50%;
+         left: 50%;
+         text-align: center;
+     }
+     label{
+        font-size: 35px;
+     }
+     .btn{
+  background-color: white;
+  width: 150px;
+  height: 30px;
+  color: #000eee;
+  font-size: 20px;
+  border: 1px solid blue;
+  border-radius: 10px;
+}
+#username {
+  background-color: blue;
+  color: #0000;
+  border: 1px solid blue;
+  width: 350px;
+  height: 35px;
+  font-size: 17px;
+}
+#password{
+  background-color: blue;
+  color: #0000;
+  border: 1px solid blue;
+  width: 350px;
+  height: 35px;
+  font-size: 17px;
+}
+.btn:hover {
+  background-color:tomato;
+}
+.value{
+  color: #eeee;
+  text-align: center;
+}
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <img src="https://thumbs.dreamstime.com/z/beautiful-autumn-foliage-background-brunches-falling-tree-leaves-sky-bokeh-98280795.jpg"
+        alt="image"/>
+        <div class="child">
+            <form>
+           <label Forhtml="usr">Username</label><br/>
+           <input type="text" id="username" name="username" placeholder="Enter your username"/><br/>
+           <label Forhtml="psd">password</label><br/>
+           <input type="password" id="password" name="password" placeholder="Enter your password"/><br/>
+           <a class="value" href="https://google.com">Forgot Password?</a><br/><br/>
+           <button type="submit" class="btn">Log in</button>
+           </form>
+        </div>
+    </div>
+</body>
+</html>
